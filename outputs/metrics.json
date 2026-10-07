@@ -1,0 +1,302 @@
+{
+  "rows_raw": 32833,
+  "tracks": 28356,
+  "duplicates_removed": 4477,
+  "zero_popularity_tracks": 2620,
+  "hit_threshold": 70,
+  "hits": 2635,
+  "release_years": [
+    1957,
+    2020
+  ],
+  "genre": [
+    {
+      "genre": "pop",
+      "tracks": 5132,
+      "median_popularity": 50.0,
+      "avg_popularity": 45.9,
+      "hit_rate_pct": 18.4,
+      "zero_pop_pct": 6.1
+    },
+    {
+      "genre": "latin",
+      "tracks": 4641,
+      "median_popularity": 48.0,
+      "avg_popularity": 44.3,
+      "hit_rate_pct": 15.5,
+      "zero_pop_pct": 7.5
+    },
+    {
+      "genre": "rap",
+      "tracks": 5486,
+      "median_popularity": 46.0,
+      "avg_popularity": 42.2,
+      "hit_rate_pct": 9.6,
+      "zero_pop_pct": 7.9
+    },
+    {
+      "genre": "rock",
+      "tracks": 4451,
+      "median_popularity": 45.0,
+      "avg_popularity": 40.4,
+      "hit_rate_pct": 10.5,
+      "zero_pop_pct": 8.6
+    },
+    {
+      "genre": "r&b",
+      "tracks": 5138,
+      "median_popularity": 42.0,
+      "avg_popularity": 39.8,
+      "hit_rate_pct": 13.0,
+      "zero_pop_pct": 9.5
+    },
+    {
+      "genre": "edm",
+      "tracks": 5537,
+      "median_popularity": 35.0,
+      "avg_popularity": 34.1,
+      "hit_rate_pct": 6.4,
+      "zero_pop_pct": 11.8
+    }
+  ],
+  "decade": [
+    {
+      "decade": 1950,
+      "tracks": 3,
+      "median_popularity": 59.0,
+      "hit_rate_pct": 33.3
+    },
+    {
+      "decade": 1960,
+      "tracks": 132,
+      "median_popularity": 56.5,
+      "hit_rate_pct": 21.2
+    },
+    {
+      "decade": 1970,
+      "tracks": 783,
+      "median_popularity": 50.0,
+      "hit_rate_pct": 13.3
+    },
+    {
+      "decade": 1980,
+      "tracks": 1090,
+      "median_popularity": 47.0,
+      "hit_rate_pct": 10.1
+    },
+    {
+      "decade": 1990,
+      "tracks": 2081,
+      "median_popularity": 42.0,
+      "hit_rate_pct": 6.7
+    },
+    {
+      "decade": 2000,
+      "tracks": 3807,
+      "median_popularity": 34.0,
+      "hit_rate_pct": 6.3
+    },
+    {
+      "decade": 2010,
+      "tracks": 19834,
+      "median_popularity": 43.0,
+      "hit_rate_pct": 9.9
+    },
+    {
+      "decade": 2020,
+      "tracks": 626,
+      "median_popularity": 43.0,
+      "hit_rate_pct": 8.1
+    }
+  ],
+  "subgenre_top5": [
+    {
+      "genre": "pop",
+      "subgenre": "post-teen pop",
+      "tracks": 1129,
+      "median_popularity": 65.0
+    },
+    {
+      "genre": "r&b",
+      "subgenre": "hip pop",
+      "tracks": 1256,
+      "median_popularity": 60.0
+    },
+    {
+      "genre": "rock",
+      "subgenre": "permanent wave",
+      "tracks": 1105,
+      "median_popularity": 59.0
+    },
+    {
+      "genre": "latin",
+      "subgenre": "reggaeton",
+      "tracks": 949,
+      "median_popularity": 59.0
+    },
+    {
+      "genre": "pop",
+      "subgenre": "dance pop",
+      "tracks": 1298,
+      "median_popularity": 56.0
+    }
+  ],
+  "subgenre_bottom5": [
+    {
+      "genre": "edm",
+      "subgenre": "electro house",
+      "tracks": 1511,
+      "median_popularity": 38.0
+    },
+    {
+      "genre": "r&b",
+      "subgenre": "neo soul",
+      "tracks": 1637,
+      "median_popularity": 34.0
+    },
+    {
+      "genre": "edm",
+      "subgenre": "big room",
+      "tracks": 1206,
+      "median_popularity": 33.0
+    },
+    {
+      "genre": "r&b",
+      "subgenre": "new jack swing",
+      "tracks": 1133,
+      "median_popularity": 29.0
+    },
+    {
+      "genre": "edm",
+      "subgenre": "progressive electro house",
+      "tracks": 1809,
+      "median_popularity": 27.0
+    }
+  ],
+  "top_artists": [
+    {
+      "track_artist": "Billie Eilish",
+      "tracks": 26,
+      "median_popularity": 81.0,
+      "hits": 23.0
+    },
+    {
+      "track_artist": "Red Hot Chili Peppers",
+      "tracks": 15,
+      "median_popularity": 74.0,
+      "hits": 10.0
+    },
+    {
+      "track_artist": "Bruno Mars",
+      "tracks": 20,
+      "median_popularity": 74.0,
+      "hits": 13.0
+    },
+    {
+      "track_artist": "Camila Cabello",
+      "tracks": 16,
+      "median_popularity": 73.0,
+      "hits": 12.0
+    },
+    {
+      "track_artist": "Justin Bieber",
+      "tracks": 17,
+      "median_popularity": 72.0,
+      "hits": 10.0
+    },
+    {
+      "track_artist": "Maluma",
+      "tracks": 15,
+      "median_popularity": 72.0,
+      "hits": 9.0
+    },
+    {
+      "track_artist": "Mac Miller",
+      "tracks": 15,
+      "median_popularity": 72.0,
+      "hits": 9.0
+    },
+    {
+      "track_artist": "Khalid",
+      "tracks": 28,
+      "median_popularity": 71.5,
+      "hits": 18.0
+    },
+    {
+      "track_artist": "Shawn Mendes",
+      "tracks": 21,
+      "median_popularity": 71.0,
+      "hits": 11.0
+    },
+    {
+      "track_artist": "Bad Bunny",
+      "tracks": 32,
+      "median_popularity": 70.5,
+      "hits": 18.0
+    }
+  ],
+  "spearman_corr": {
+    "instrumentalness": -0.17,
+    "energy": -0.084,
+    "duration_min": -0.083,
+    "liveness": -0.016,
+    "tempo": -0.002,
+    "speechiness": 0.008,
+    "danceability": 0.039,
+    "valence": 0.041,
+    "loudness": 0.061,
+    "acousticness": 0.1
+  },
+  "hit_profile": [
+    {
+      "feature": "danceability",
+      "hits": 0.687,
+      "demais": 0.67
+    },
+    {
+      "feature": "energy",
+      "hits": 0.69,
+      "demais": 0.721
+    },
+    {
+      "feature": "loudness",
+      "hits": -5.803,
+      "demais": -6.34
+    },
+    {
+      "feature": "speechiness",
+      "hits": 0.063,
+      "demais": 0.062
+    },
+    {
+      "feature": "acousticness",
+      "hits": 0.118,
+      "demais": 0.081
+    },
+    {
+      "feature": "instrumentalness",
+      "hits": 0.0,
+      "demais": 0.0
+    },
+    {
+      "feature": "liveness",
+      "hits": 0.122,
+      "demais": 0.127
+    },
+    {
+      "feature": "valence",
+      "hits": 0.533,
+      "demais": 0.508
+    },
+    {
+      "feature": "tempo",
+      "hits": 119.887,
+      "demais": 121.989
+    },
+    {
+      "feature": "duration_min",
+      "hits": 3.535,
+      "demais": 3.597
+    }
+  ]
+}
