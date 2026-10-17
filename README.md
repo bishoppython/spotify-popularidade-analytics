@@ -4,6 +4,8 @@
 
 **[Ver o dashboard interativo](https://bishoppython.github.io/spotify-popularidade-analytics/)**
 
+[![Dashboard de popularidade no Spotify](docs/img/dashboard.png)](https://bishoppython.github.io/spotify-popularidade-analytics/)
+
 ## 💡 Resumo do projeto
 
 Analisei 28.356 faixas de playlists do Spotify para entender o que separa uma música popular das demais. O resultado contraria a intuição comum: **as características do áudio quase não explicam a popularidade** (nenhuma passa de |ρ| = 0,17). O que mais separa sucesso de fracasso é o **subgênero**: a mediana vai de 65 em *post-teen pop* a 27 em *progressive electro house*.
@@ -35,10 +37,7 @@ Escolher pelo "feeling" custa caro: uma faixa sem tração ocupa o lugar de outr
 
 ## 🛠️ Metodologia e ferramentas
 
-```
-download + checksum  →  staging (SQL)  →  dim_track (1 linha/faixa)  →  marts  →  análise  →  dashboard
-      Python               DuckDB              DuckDB                    DuckDB     pandas     Plotly
-```
+![Pipeline de dados](docs/img/pipeline.svg)
 
 1. **Ingestão reprodutível** (`src/ingest.py`): baixa o CSV e confere o SHA-256. Se a fonte mudar, o pipeline para em vez de produzir números diferentes sem aviso.
 2. **Modelagem em SQL** (`sql/`): staging com tipagem; uma dimensão de faixas no grão correto; uma tabela-ponte faixa × gênero; e marts por gênero e década.
@@ -83,6 +82,8 @@ No pop, uma faixa tem quase **3 vezes mais chance** de ser hit do que no EDM.
 | reggaeton (latin) | 59 | neo soul (r&b) | 34 |
 | dance pop (pop) | 56 | electro house (edm) | 38 |
 
+![Os 5 melhores e os 5 piores subgêneros](docs/img/subgeneros.png)
+
 O R&B aparece nos dois extremos: *hip pop* tem mediana 60 e *new jack swing*, 29. Uma decisão tomada só pelo gênero esconde essa diferença.
 
 ### 4. Clássicos que sobrevivem nas playlists vão bem
@@ -95,6 +96,8 @@ O R&B aparece nos dois extremos: *hip pop* tem mediana 60 e *new jack swing*, 29
 | 1990 | 2.081 | 42 |
 | 2000 | 3.807 | 34 |
 | 2010 | 19.834 | 43 |
+
+![Popularidade por década de lançamento](docs/img/decadas.png)
 
 Faixas antigas que ainda estão nas playlists têm mediana alta. É um **viés de sobrevivência**: só os clássicos que continuam sendo ouvidos chegam ao dataset. Os anos 2000 formam o "vale" do catálogo.
 

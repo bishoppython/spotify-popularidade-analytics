@@ -36,4 +36,26 @@ ax.axvline(0, color=MUTED, lw=1); ax.set_xlim(-0.25, 0.25); ax.grid(axis="y", vi
 ax.set_xlabel("Correlação de Spearman com a popularidade")
 ax.set_title("Características do áudio x popularidade")
 fig.tight_layout(); fig.savefig(img / "correlacao.png"); plt.close(fig)
-print("OK: docs/img/genero.png, docs/img/correlacao.png")
+sub = m["subgenre_top5"] + m["subgenre_bottom5"]
+sub = sorted(sub, key=lambda r: r["median_popularity"])
+fig, ax = plt.subplots(figsize=(8, 4.6), dpi=150)
+bars = ax.barh([f'{r["subgenre"]} ({r["genre"]})' for r in sub], [r["median_popularity"] for r in sub],
+               color=[COBALT if r in m["subgenre_top5"] else AMBER for r in sub], height=0.6)
+ax.bar_label(bars, fmt="%.0f", padding=4, color=INK)
+ax.axhline(4.5, color=MUTED, lw=1, ls="--")
+ax.text(71, 4.6, "5 melhores ↑", va="bottom", ha="right", color=MUTED, fontsize=8.5)
+ax.text(71, 4.4, "5 piores ↓", va="top", ha="right", color=MUTED, fontsize=8.5)
+ax.set_xlabel("Popularidade mediana (0–100)"); ax.set_xlim(0, 72); ax.grid(axis="y", visible=False)
+ax.set_title("Subgêneros: os 5 melhores e os 5 piores")
+fig.tight_layout(); fig.savefig(img / "subgeneros.png"); plt.close(fig)
+
+d = [r for r in m["decade"] if r["tracks"] >= 100]
+fig, ax = plt.subplots(figsize=(8, 3.6), dpi=150)
+b = ax.bar([f'{r["decade"]}s' for r in d], [r["median_popularity"] for r in d],
+           color=[AMBER if r["decade"] == 2000 else COBALT for r in d], width=0.6)
+ax.bar_label(b, labels=[f'{r["median_popularity"]:g}'.replace(".", ",") + f'\n{r["tracks"]:,} faixas'.replace(",", ".")
+                        for r in d], padding=3, color=INK, fontsize=8.5)
+ax.set_ylabel("Popularidade mediana"); ax.set_ylim(0, 72); ax.grid(axis="x", visible=False)
+ax.set_title("Popularidade por década de lançamento (décadas com 100+ faixas)")
+fig.tight_layout(); fig.savefig(img / "decadas.png"); plt.close(fig)
+print("OK: docs/img/genero.png, docs/img/correlacao.png, docs/img/subgeneros.png, docs/img/decadas.png")
